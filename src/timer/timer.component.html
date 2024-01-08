@@ -1,0 +1,7 @@
+<div>
+    <h1>{{timer}}</h1>
+    <button *ngIf="!timerStarted" (click)="startTimer()">Start</button>
+    <button *ngIf="timerStarted" (click)="pauseTimer()">Pause</button>
+    <button *ngIf="isPaused" (click)="resumeTimer()">Resume</button>
+    <button (click)="resetTimer()">Reset</button>
+</div>
